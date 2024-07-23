@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div class="container" id="container">
+      <!-- sign-in page -->
+      <div class="login-box">
+        <div class="login">
+          <h1>Sign In</h1>
+          <form action="">
+            <div class="email">
+              <p>Email</p>
+              <input
+                type="email"
+                id="email"
+                value=""
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+            <div class="password">
+              <p>Password</p>
+              <input
+                type="password"
+                id="password"
+                value=""
+                placeholder="Enter your Password"
+                required
+              />
+            </div>
+            <div class="rem-forgot">
+              <div class="remember">
+                <input type="checkbox" value="lsRememberMe" id="rememberMe" />
+                <label for="rememberMe" class="p">Remember me</label>
+              </div>
+              <div class="forgot">
+                <a href="#">Forget Password?</a>
+              </div>
+            </div>
+            <div class="submit">
+              <button class="btn">Sign In</button>
+            </div>
+          </form>
+          <div class="lines">
+            <div class="line"></div>
+            <div class="or">OR</div>
+            <div class="line"></div>
+          </div>
+          <div class="google">
+            <button id="google" class="btn">
+              <img src="icons8-google-48.png" alt="" />
+              <p>Continue with Google</p>
+            </button>
+          </div>
+          <div class="facebook" class="btn">
+            <button id="facebook">
+              <img src="icons8-facebook-48.png" alt="" />
+              <p>Continue with Facebook</p>
+            </button>
+          </div>
+          <div class="no-account">
+            <p>Don't have an Account?</p>
+            <p class="register" id="signup">Sign Up</p>
+          </div>
+        </div>
+      </div>
+      <div class="wallpaper">
+        <img src="logo.png" alt="" />
+      </div>
+
+      <!-- sign-Up page -->
+      <div class="signup-box">
+        <div class="signup">
+          <h2>Create an account</h2>
+          <form action="">
+            <div class="email">
+              <p>Email</p>
+              <input
+                type="email"
+                id="email"
+                value=""
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+            <div class="password">
+              <p>Password</p>
+              <input
+                type="password"
+                id="password"
+                value=""
+                placeholder="Enter your Password"
+                required
+              />
+            </div>
+            <div class="password">
+              <p>Confirm Password</p>
+              <input
+                type="password"
+                id="password"
+                value=""
+                placeholder="Enter your Password"
+                required
+              />
+            </div>
+            <div class="submit">
+              <button class="btn">Sign Up</button>
+            </div>
+          </form>
+          <div class="lines">
+            <div class="line"></div>
+            <div class="or">OR</div>
+            <div class="line"></div>
+          </div>
+          <div class="google">
+            <button id="google" class="btn">
+              <img src="icons8-google-48.png" alt="" />
+              <p>Continue with Google</p>
+            </button>
+          </div>
+          <div class="facebook" class="btn">
+            <button id="facebook">
+              <img src="icons8-facebook-48.png" alt="" />
+              <p>Continue with Facebook</p>
+            </button>
+          </div>
+          <div class="no-account">
+            <p>Already have an Account?</p>
+            <p class="register" id="signin">Sign In</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let signup = document.getElementById("signup");
+      let signin = document.getElementById("signin");
+      let container = document.getElementById("container");
+      let login_box = document.querySelector(".login-box");
+      let signup_box = document.querySelector(".signup-box");
+      signup.addEventListener("click", () => {
+        login_box.style.display = "none";
+        signup_box.style.display = "block";
+      });
+      signin.addEventListener("click", () => {
+        login_box.style.display = "block";
+        signup_box.style.display = "none";
+      });
+    </script>
+  </body>
+</html>

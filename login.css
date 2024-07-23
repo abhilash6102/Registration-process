@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(202, 202, 202);
+}
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wallpaper {
+  width: 60vmin;
+  height: 80vmin;
+  background-color: #08411e;
+  background-image: url("logo.png");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.wallpaper img {
+  width: 50vmin;
+  height: 50vmin;
+}
+/* sign-in page */
+.login-box {
+  width: 60vmin;
+  height: 80vmin;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  font-family: "Poppins", sans-serif;
+}
+.login {
+  margin: 50px;
+}
+.login p {
+  font-size: 13px;
+  color: rgb(83, 83, 83);
+}
+.login h1 {
+  margin-bottom: 10px;
+}
+input[type="email"],
+input[type="password"] {
+  width: 95%;
+  padding: 10px;
+  border: 1px rgb(184, 184, 184) solid;
+  border-radius: 7px;
+  margin-bottom: 12px;
+  margin-top: 5px;
+  outline: none;
+}
+input::placeholder {
+  font-size: 12px;
+  color: rgb(104, 104, 104);
+}
+.rem-forgot {
+  display: flex;
+  justify-content: space-between;
+}
+
+.remember p {
+  font-size: 12px;
+}
+.p {
+  font-size: 13px;
+  color: rgb(83, 83, 83);
+  position: relative;
+  bottom: 2px;
+}
+a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #045a25;
+}
+input[type="checkbox"] {
+  -webkit-appearance: checkbox;
+  -moz-appearance: checkbox;
+  appearance: checkbox;
+  display: inline-block;
+  width: auto;
+}
+.submit .btn {
+  width: 100%;
+  padding: 10px;
+  color: white;
+  border-radius: 12px;
+  background-color: #08411e;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.lines {
+  display: flex;
+  gap: 10px;
+  font-size: 12px;
+  color: rgb(97, 97, 97);
+  margin-top: 25px;
+}
+.lines .line {
+  width: 45%;
+  height: 0.5px;
+  margin-top: 8px;
+  background-color: rgb(128, 128, 128);
+}
+
+.google button {
+  width: 100%;
+  display: flex;
+  gap: 10vmin;
+  padding: 5px 0 5px 15px;
+  margin-top: 15px;
+  background-color: transparent;
+  outline: none;
+  border: 1px rgb(184, 184, 184) solid;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.google button p {
+  margin-top: 5px;
+}
+.google img {
+  width: 4vmin;
+}
+.facebook button {
+  width: 100%;
+  display: flex;
+  gap: 9vmin;
+  padding: 5px 0 5px 15px;
+  margin-top: 20px;
+  background-color: transparent;
+  outline: none;
+  border: 1px rgb(184, 184, 184) solid;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.facebook button p {
+  margin-top: 5px;
+}
+.facebook img {
+  width: 4vmin;
+}
+.no-account {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 5px;
+}
+.no-account .register {
+  font-size: 13px;
+  color: #045a25;
+  cursor: pointer;
+}
+/* sign-up page */
+.signup-box {
+  width: 60vmin;
+  height: 80vmin;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  font-family: "Poppins", sans-serif;
+  display: none;
+}
+.signup {
+  margin: 35px;
+}
+.signup p {
+  font-size: 13px;
+  color: rgb(83, 83, 83);
+}
+.signup h2 {
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 900px) {
+  .google button {
+    gap: 5vmin;
+  }
+  .facebook button {
+    gap: 4vmin;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .wallpaper {
+    display: none;
+  }
+  .login-box {
+    width: 80vw;
+    height: fit-content;
+  }
+  .signup-box {
+    width: 80vw;
+    height: fit-content;
+  }
+  .login {
+    margin: 40px;
+  }
+  .google button {
+    gap: 18vmin;
+  }
+  .facebook button {
+    gap: 17vmin;
+  }
+}
+@media only screen and (max-width: 500px) {
+  body {
+    overflow: hidden;
+  }
+  .login-box {
+    width: 100vw;
+    height: 100vh;
+    padding-top: 180px;
+  }
+  .signup-box {
+    width: 100vw;
+    height: 100vh;
+    padding-top: 180px;
+  }
+  .login {
+    margin: 30px;
+  }
+  .login h1 {
+    text-align: center;
+  }
+  .signup {
+    margin: 30px;
+  }
+  .google button {
+    gap: 18vmin;
+  }
+  .facebook button {
+    gap: 17vmin;
+  }
+}
