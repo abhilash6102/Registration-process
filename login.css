@@ -214,13 +214,14 @@ input[type="checkbox"] {
 @media only screen and (max-width: 500px) {
   body {
     background-color: white;
+    overflow: hidden;
   }
   .login-box {
     width: 100vw;
     height: fit-content;
     box-shadow: none;
     position: relative;
-    top: -40px;
+    top: -100px;
   }
   .signup-box {
     width: 100vw;
