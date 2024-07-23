@@ -219,6 +219,8 @@ input[type="checkbox"] {
     width: 100vw;
     height: fit-content;
     box-shadow: none;
+    position: relative;
+    top: -40px;
   }
   .signup-box {
     width: 100vw;
