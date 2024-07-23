@@ -213,17 +213,17 @@ input[type="checkbox"] {
 }
 @media only screen and (max-width: 500px) {
   body {
-    overflow: hidden;
+    background-color: white;
   }
   .login-box {
     width: 100vw;
-    height: 100vh;
-    padding-top: 180px;
+    height: fit-content;
+    box-shadow: none;
   }
   .signup-box {
     width: 100vw;
-    height: 100vh;
-    padding-top: 150px;
+    height: fit-content;
+    box-shadow: none;
   }
   .login {
     margin: 30px;
@@ -255,5 +255,10 @@ input[type="checkbox"] {
   input[type="checkbox"] {
     width: 4vmin;
     height: 3.5vmin;
+    -webkit-appearance: checkbox;
+    -moz-appearance: checkbox;
+    appearance: checkbox;
+    display: inline-block;
+    width: auto;
   }
 }
